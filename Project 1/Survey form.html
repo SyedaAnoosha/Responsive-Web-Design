@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking your time to provide feedback. We appreciate hearing from you and will review your comments carefully.</p>
+            <form id="survey-form">
+                <div class="survey-form-group">
+                    <label for="name" id="name-label">Enter your name: <input type="text" id="name" name="name" placeholder="Anoosha" required></label>
+                    <label for="email" id="email-label">Enter your email: <input type="email" id="email" name="email" placeholder="Anoosha123@gmail.com" required></label>
+                    <label for="number" id="number-label">Enter your number: <input type="number" id="number" name="age" min="13" max="90" placeholder="26"></label>
+                </div>
+                <div class="survey-form-group">
+                    <label for="dropdown">How did you hear about us?
+                        <select id="dropdown" name="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Social Media</option>
+                        <option value="2">Advertising</option>
+                        <option value="3">Friends</option>
+                        <option value="4">Other</option>
+                        </select>
+                    </label>
+                </div>
+            
+                <div class="survey-form-group">
+                    <label for="satisfaction-level">Are you happy with our application?
+                        <label for="satisfied"><input id="satisfied" type="radio" name="satisfaction-level" value="satisfied"> Satisfied</label>
+                        <label for="neutral"><input id="neutral" type="radio" name="satisfaction-level" value="neutral"> Neutral</label>
+                        <label for="unsatisfied"><input id="unsatisfied" type="radio" name="satisfaction-level" value="unsatisfied" > Unsatisfied</label>
+                    </label>
+                </div>
+
+                <div class="survey-form-group">
+                    <label for="hobbies">Which of the following hobbies do you enjoy?
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+
+                        <input type="checkbox" id="hiking" name="hobbies" value="hiking">
+                        <label for="hiking">Hiking</label>
+
+                        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                        <label for="gaming">Gaming</label>
+
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label>
+                    </label>
+                </div>
+
+                <div class="survey-form-group">
+                    <label for="review">Reviews:
+                        <textarea name="review" id="review" cols="30" rows="10" placeholder="Share your reviews"></textarea>
+                    </label>
+                </div>
+
+                <div class="survey-form-group">
+                    <input type="submit" value="Submit" id="submit"/>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
