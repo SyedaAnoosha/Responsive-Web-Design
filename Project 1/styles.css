@@ -5,13 +5,14 @@ body {
   background-image: url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWVzdGhldGljJTIwYm9va3N8ZW58MHx8MHx8&w=1000&q=80");
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
+  background-size: cover;
+
 }
 .container{
   margin: auto;
-  padding: 0;
+  padding: 5px 0;
   background-color: antiquewhite;
-  width: 85%;
-  height: 100%;
+  width: 75%;
 }
 
 #title, #description{
@@ -23,32 +24,81 @@ body {
 #title{
   text-align: center;
   font-size: 40px;
-  margin: 1em auto;
+  margin: 0.5em auto;
 }
 
 #description{
   text-align: center;
   font-style: italic;
   font-size: 20px;
+  padding: 10px;
 }
 
 .survey-form-group{
-  font-size: 20px;   
-  width: 80%;
-  margin: auto 0;
+  font-size: 20px;  
+  margin: auto;
+  width: 50%;
+  height: 100%;
 
 }
 
 label{
   display: block;
+  margin: auto;
+  padding: 7px 10px;
+  margin-bottom: 15px;
 }
 
-#satisfaction-level{
+input[name="satisfaction-level"]{
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
 
+#dropdown{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
 
+#submit{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  color: #000;
+  border-color: black;
+  min-width: 300px;
+}
+
+input[name="hobbies"]{
+  display: inline-block;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+
+}
+
+#reading-label, #hiking-label, #gaming-label, #sports-label{
+  display: inline;
+  margin: 10px 10px 10px 10px ;
   
+}
